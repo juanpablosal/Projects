@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    background-color: rgba(247,209,80,255);
+    justify-items: center;
+    
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 230px;
+    height: 290px;
+    border-radius: 10px;
+    background-color: white;
+    margin-top: 6%;
+    justify-content: center;
+    border: 1px solid rgb(0, 0, 0);
+    padding-bottom: 15px;
+    box-shadow: 4px 4px 0px 0px black, 0px 4px 0px 0px black; 
+}
+
+.ilustration {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ilustration img {
+    padding-top: 4em;
+    width: 90%;
+    border-radius: 5px;
+}
+
+
+.button button{
+    background-color: rgba(247,209,80,255);
+    border: 0;
+    border-radius: 2px;
+    font-weight: bold;
+    font-size:13px ;
+}
+
+
+.down {
+    padding: 10px;
+}
+
+.text {
+    text-align: left;
+    font-size: 10px;
+    font-family: sans-serif;
+    padding-bottom: 0px;
+}
+
+.text h2 {
+    font-size: 13px;
+    font-weight: bold;
+}
+.text h4 {
+    font-size: 10px;
+    font-weight: lighter;
+}
+
+.text p {
+    padding: 0px;
+    color: gray;
+}
+
+.profile {
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+ top: 0%;
+ padding-bottom: 2em;
+}
+
+.profile img {
+    width: 30px;
+    height: 35px;
+    border-radius: 50%;
+    padding-right: 5px;
+}
+
+.profile p {
+    font-size: 13px;
+    font-weight: bolder;
+    
+}
