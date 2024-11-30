@@ -1,0 +1,105 @@
+/* -----GOOGLE FONTS---------------*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,500&family=Outfit:wght@100..900&family=Syne:wght@400..800&display=swap');
+ 
+:root {
+    /* Colors*/
+
+    --first-color: hsl(230, 100%, 50%);
+    --second-color: hsl(150, 100%, 38%);
+    --tittle-color: hsl(230, 24%, 12%);
+    --text-color: hsl(230, 4%, 60%);
+    --gray-color: hsl(230, 24%, 88%);
+    --border-color: hsl(230, 4%, 92%);
+    --body-color: hsl(230, 100%, 98%);
+    --container-color: hsl(0, 0%, 100%);
+
+    /* ----------------- Font and typography------------*/
+    /*.5rem = 8px | 1rem = 16px ...*/
+    --body-font: "Syne", sans-serif; 
+    --h2-font-size: 1.25rem ; 
+    --normal-font-size: 1rem;
+}
+
+
+
+* {
+   box-sizing: border-box;
+   padding: 0;
+   margin: 0;
+ }
+
+ body {
+   font-family:var(--body-font) ;
+   font-size: var(--normal-font-size);
+   background-color: var(--body-color);
+   color: var(--text-color);
+ }
+
+ a {
+   text-decoration: none;
+ }
+
+ img {
+   display: block;
+   max-width: 100%;
+   height: auto;
+ }
+
+ /* --------------CARD---------------*/
+
+ .container {
+   height: 100vh;
+   display: grid;
+   place-items: center;
+   margin-inline: 1.5rem;
+   padding-block: 7rem;
+ }
+
+ .card_article {
+   position: relative;
+   align-self: flex-end;
+   display: flex;
+   justify-content: center;
+ }
+
+.card_profile {
+   width: 100px;
+   height: 100px;
+   background-color: var(--gray-color);
+   border-radius: 50%;
+   overflow: hidden;
+   display: flex;
+   justify-content: center;
+   align-items: flex-end;
+}
+
+.card_profile img {
+   width:  95px ; 
+}
+
+
+.card_profile  {
+  border: 4px solid var(--container-color);
+  z-index: 5;
+/*transition: opacity .4s, transform .4s; */
+}
+
+
+.card_tooltip {
+   position: absolute;
+   bottom: 4rem;
+   padding-bottom: 5rem;
+   /* transition: opacity .4s, bottom .4s cubric-bezier(.6 , -.5, .3, 1.5);
+   pointer-events: none;
+   opacity: 0;*/
+}
+
+.card_content {
+   position: relative;
+   width: calc(100vw - 3rem);
+   background-color: var(--container-color);
+   box-shadow: 0 16px 32px hsla(230, 50%, 20%, .1);
+   padding: 2rem 1.5rem;
+   border-radius: 1.5rem;
+}
+ 
